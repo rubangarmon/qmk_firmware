@@ -10,13 +10,18 @@ This is a keyboard firmware based on the [tmk\_keyboard firmware](https://github
 
 ## Ruben's Keyboards Configurations commands
 
-Plank:
+Planck:
 ```
 ```
 
 Lily58:
 ```
 qmk compile -kb lily58 -km rubangarmon
+```
+
+tokyokeyboard/tokyo60:
+```
+qmk compile -kb tokyokeyboard/tokyo60 -km rubangarmon
 ```
 
 ## Documentation

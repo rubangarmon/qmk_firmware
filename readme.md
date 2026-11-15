@@ -8,21 +8,65 @@
 
 This is a keyboard firmware based on the [tmk\_keyboard firmware](https://github.com/tmk/tmk_keyboard) with some useful features for Atmel AVR and ARM controllers, and more specifically, the [OLKB product line](https://olkb.com), the [ErgoDox EZ](https://ergodox-ez.com) keyboard, and the Clueboard product line.
 
-## Ruben's Keyboards Configurations commands
+## Ruben's Keyboard Keymaps
 
-Planck:
-```
+These are my custom keymaps for the Planck, Lily58, and Tokyo60 keyboards. Each link opens the keymap files in this repository.
+
+### Planck
+
+The Planck keymap includes QWERTY, Colemak, and gaming base layers, along with numeric, function, and navigation layers.
+
+Keymap: [Planck — rubangarmon](https://github.com/rubangarmon/qmk_firmware/tree/master/keyboards/planck/keymaps/rubangarmon)
+
+Build:
+
+```sh
+qmk compile -kb planck/rev6 -km rubangarmon
 ```
 
-Lily58:
-```
-qmk compile -kb lily58 -km rubangarmon
+Flash:
+
+```sh
+qmk flash -kb planck/rev6 -km rubangarmon
 ```
 
-tokyokeyboard/tokyo60:
+### Lily58
+
+The Lily58 keymap includes QWERTY, numeric, function, and navigation layers, plus OLED status and key logging.
+
+Keymap: [Lily58 — rubangarmon](https://github.com/rubangarmon/qmk_firmware/tree/master/keyboards/lily58/keymaps/rubangarmon)
+
+Build:
+
+```sh
+qmk compile -kb lily58/rev1 -km rubangarmon
 ```
+
+Flash:
+
+```sh
+qmk flash -kb lily58/rev1 -km rubangarmon
+```
+
+### Tokyo60
+
+The Tokyo60 keymap includes Windows/Linux and Mac base layers, function and movement layers, and RGB controls.
+
+Keymap: [Tokyo60 — rubangarmon](https://github.com/rubangarmon/qmk_firmware/tree/master/keyboards/tokyokeyboard/tokyo60/keymaps/rubangarmon)
+
+Build:
+
+```sh
 qmk compile -kb tokyokeyboard/tokyo60 -km rubangarmon
 ```
+
+Flash:
+
+```sh
+qmk flash -kb tokyokeyboard/tokyo60 -km rubangarmon
+```
+
+Run these commands from the QMK firmware repository root. Put the keyboard into bootloader mode when prompted to flash it.
 
 ## Documentation
 
